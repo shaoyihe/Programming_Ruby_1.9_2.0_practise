@@ -9,21 +9,19 @@ p c["a"]
 puts "********"
 
 class Word
+	attr_reader :word
 	def initialize
 		@word = Hash.new(0)
 	end
 
 	def read(word_)
 		word_.downcase.scan(/\w+/).each{ |item| @word[item] += 1 }
-		p @word.sort_by{|key, value| value}
+		# @word.sort_by{|key, value| value}
 		self	
 	end
 
-	def to_s
-		@word
-	end
 end	
 
 word = Word.new
 p word.read("test test 2 3 4").read("test test 2 3 4")
-puts word.to_s
+puts word.word
