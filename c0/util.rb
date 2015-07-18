@@ -1,12 +1,8 @@
 def loop_until_nil(init)
 	# init = init.class
 	result = [init] if init
-	while init
-		temp = yield(init)
-		result << temp
-		init = temp
-	end
-	result[0..-2]
+	result << init if init = yield(init) while init
+	result
 end
 
 
@@ -16,3 +12,4 @@ class Object
 	end
 end	
 
+p 1.all_super_class
