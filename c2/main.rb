@@ -7,5 +7,6 @@ ARGV.each do |file_name|
 end
 
 puts "total_price is #{csv_reader.total_price}"
+puts "total_price2 is #{csv_reader.total_price2}"
 
 p csv_reader

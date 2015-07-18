@@ -17,5 +17,9 @@ class CSV_Reader
 	def total_price
 		@book_in_stores.sum{ |book| book.price }
 	end
+
+	def total_price2
+		@book_in_stores.inject(0){|total, book| total + book.price}
+	end
 end	
 
