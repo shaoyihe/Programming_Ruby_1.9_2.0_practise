@@ -4,9 +4,9 @@ p /test/.all_super_class
 
 p /test/=~"atest b"
 
-File.foreach("./reg.rb").with_index do |line, index|
-	if /p/ =~ line
-		puts "#{index} : #{line}"
+File.foreach($0).with_index do |line, index|
+	if /^p/ =~ line
+		puts "#{index+1} : #{line}"
 	end
 end
 

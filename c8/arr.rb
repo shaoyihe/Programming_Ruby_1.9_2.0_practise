@@ -1,0 +1,1 @@
+p ('a'..'z').to_a.each_with_object([]){|item , obj| obj << [item, obj.length+1]}
