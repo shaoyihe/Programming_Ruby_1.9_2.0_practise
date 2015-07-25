@@ -1,0 +1,4 @@
+$10 off $30 of food #should return {30: 10}
+$30 of awesome for $10 #should return {30: 20}
+s
+$20 Sneakers for $5 #should return {20: 15}

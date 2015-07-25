@@ -1,0 +1,10 @@
+binwrite(name, string, [offset] ) => fixnum
+binwrite(name, string, [offset], open_args ) => fixnum
+Same as IO.write except opening the file in binary mode and ASCII-8BIT encoding (“wb:ASCII-8BIT”).
+
+copy_stream(src, dst)
+copy_stream(src, dst, copy_length)
+copy_stream(src, dst, copy_length, src_offset)
+::copy_stream copies src to dst. src and dst is either a filename or an IO.
+
+This method returns the number of bytes copied.

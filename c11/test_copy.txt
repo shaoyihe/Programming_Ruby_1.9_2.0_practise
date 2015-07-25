@@ -1,0 +1,5 @@
+2015-07-25 11:04:09 +0800
+1:binwrite(name, string, [offset], open_args ) => fixnum
+2:Same as IO.write except opening the file in binary mode and ASCII-8BIT encoding (“wb:ASCII-8BIT”).
+3:
+4:copy_stream(src, dst)
