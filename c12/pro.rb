@@ -1,0 +1,1 @@
+p `help`.split("\n")
