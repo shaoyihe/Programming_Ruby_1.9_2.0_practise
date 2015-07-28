@@ -1,7 +1,10 @@
-# # require 
 
+threads = 5.times.map do |i|
+	Thread.new(i) do |i|
+		sleep(0.5)
+		Thread.current[:test]=i
+		puts "thread #{Thread.current.inspect} , id is #{i}"
+	end	
+end
 
-p Dir.foreach("C:\\Users\\wb-hetiezheng\\Desktop\\新建文件夹").map { |e|  e.encode("UTF-8") }
-
-# str = "\x{D6A4}\x{BEDD}RPC.xlsx"
-# p str
+threads.map(&:join).each{|t| p t[:test]}
