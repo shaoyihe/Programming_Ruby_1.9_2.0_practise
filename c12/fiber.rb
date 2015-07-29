@@ -1,3 +1,4 @@
+
 arr = %W(test one two)
 
 words = Fiber.new do |some|
