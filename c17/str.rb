@@ -1,0 +1,1 @@
+p "test some".unpack("s*")
