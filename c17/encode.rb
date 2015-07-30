@@ -1,4 +1,6 @@
-puts __ENCODING__
+# encoding: sjis
+
+puts __ENCODING__.names
 
 p Encoding.methods - Object.methods
 result =  Encoding.list.map(&:names).map do |base_name, *rest|
