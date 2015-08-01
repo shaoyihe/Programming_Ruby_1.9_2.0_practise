@@ -10,6 +10,9 @@ class Object
 	def all_super_class
 		loop_until_nil(self.class){|_class| _class.superclass}
 	end
+
+	
 end	
 
-p 1.all_super_class
+
+# p 1.all_super_class
